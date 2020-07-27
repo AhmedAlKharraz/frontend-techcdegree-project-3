@@ -4,18 +4,30 @@
 
 * {
     box-sizing: border-box;
-    /* border: red solid 1px; */
     margin: 0;
     padding: 0;
+    font-family: 'Merriweather', serif;
 }
 
 main {
     padding: 0 10px;
 }
 
-/* test this code */
-input:focus {
-    border-color: black;
+fieldset,
+input,
+select,
+button,
+textarea {
+    border: none;
+}
+
+h1 {
+    padding: 20px 0;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid #2d3945 !important;
 }
 
 /* ================================= 
@@ -25,19 +37,22 @@ input:focus {
 /* ---- All Border Line Style ---------- */
 .separate-line {
     padding: 1px 0.75em;
-    border-top: 5px solid black;
-    border-bottom: 2px solid black;
+    border-top: 5px solid #2d3945;
+    border-bottom: 2px solid #2d3945;
 }
 
 .separate-fieldset {
-    border-bottom: 2px solid black;
+    margin: 40px 0;
+
+    border-bottom: 2px solid #2d3945;
 }
+
 
 
 /* ---- Header ---------- */
 .main-header {
     width: 100%;
-    background: gray;
+    background: #2d3945;
     color: white;
     text-align: center;
 }
@@ -52,7 +67,7 @@ input:focus {
 }
 
 .sub-header h3 {
-    color: grey;
+    color: #9da3a8;
 }
 
 
@@ -79,13 +94,14 @@ fieldset {
     text-align: right;
     font-style: italic;
     padding: 3px;
+    color: #a4a9ae;
 }
 
 input,
 textarea,
 select {
     padding: 10px 15px;
-    background-color: floralwhite;
+    background-color: #eff0f1;
     border-radius: 3px;
 }
 
@@ -108,15 +124,15 @@ textarea {
 
 .signup {
     height: 50px;
-    margin: 10px 0;
+    margin: 20px 0;
     border-radius: 3px;
-    background: red;
+    background: #4ebbb5;
     color: white;
 }
 
 .copyright {
-    color: grey;
-    margin: 10px 0;
+    color: #a4a9ae;
+    margin: 20px 0;
     font-style: italic;
     text-align: center;
 }
@@ -130,6 +146,20 @@ textarea {
     main {
         width: 740px;
         margin: 0 auto;
+    }
+
+    input,
+    select {
+        padding: 15px 15px;
+    }
+
+    /* the only solution I found */
+    label {
+        margin-top: 10px;
+    }
+
+    label[for="other-topic-texarea"] {
+        margin: 0;
     }
 
     .contact-info .field {
@@ -150,6 +180,13 @@ textarea {
         width: 20%;
     }
 
+    .field .in-field-group {
+        margin: 20px 0;
+    }
+
+    .field textarea {
+        margin-top: 20px;
+    }
 }
 
 
