@@ -90,7 +90,7 @@ fieldset {
 }
 
 #full-name[type="text"]::placeholder,
-#email-address[type="text"]::placeholder {
+#email-address[type="email"]::placeholder {
     text-align: right;
     font-style: italic;
     padding: 3px;
@@ -146,7 +146,7 @@ textarea {
   Media Queries
 ==================================== */
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
 
     main {
         width: 740px;
