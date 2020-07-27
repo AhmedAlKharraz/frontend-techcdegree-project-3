@@ -137,6 +137,11 @@ textarea {
     text-align: center;
 }
 
+.signup {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
